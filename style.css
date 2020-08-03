@@ -214,8 +214,8 @@ a:hover {
 }
 
 .service-card {
-    width: 40%;
-    width: 15rem;
+    /* width: 25%; */
+    
     text-align: center;
     padding: 2rem;
     margin: 2rem;
@@ -726,7 +726,7 @@ footer{
 }
 
 
-@media (max-width: 880px) {
+@media (max-width: 700px) {
 
 	.footer-distributed{
 		font: bold 14px sans-serif;
@@ -748,6 +748,32 @@ footer{
 	.main {
 		line-height: normal;
 		font-size: auto;
-	}
+    }
+    
+    .nav-list-item {
+        float: right;
+        display: block;
+    }
+
+    .navigation{
+        display: block;
+    }
+
+    .main-card {
+        width: 100%;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .service-cards {
+        display: block;
+        width: 100%;
+    }
+
+    .project-gallery {
+        display: block
+    }
 
 }
