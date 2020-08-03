@@ -58,7 +58,7 @@ a:hover {
 }
 
 .nav {
-    width: width: 100%;;
+    width: 100%;
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -414,6 +414,10 @@ a:hover {
     -webkit-box-shadow: 0 20px 28px rgba(0,0,0,0.45);
     -moz-box-shadow: 0 20px 28px rgba(0,0,0,0.57);
     box-shadow: 0 20px 28px rgba(0,0,0,0.45);
+  }
+
+  .content h2 {
+      color: var(--default-red);
   }
   
   /* Media queries - Responsive timeline on screens less than 700px wide */
