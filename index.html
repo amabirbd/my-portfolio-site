@@ -17,9 +17,9 @@
                 <!-- <img src="assets/code2.jpg" alt="main-hero-image" class="main-hero-image"> -->
                 <div class="navigation">
                     <ul class="nav">
-                        <li class="nav-list-item">About Me</li>
-                        <li class="nav-list-item">My Works</li>
                         <li class="nav-list-item">Blog</li>
+                        <a href="#projects" style="text-decoration: none;"><li class="nav-list-item">Projects</li></a>
+                        <a href="#about-me" style="text-decoration: none;"><li class="nav-list-item">About Me</li></a>
             
                     </ul>
                 </div>
@@ -27,7 +27,7 @@
 
         <!-- main card section -->
         <div class="card-container">
-            <div class="main-card">
+            <div id="about-me" class="main-card">
                 <img src="assets/new3.jpg" alt="me" class="box-image">
                 <h2 class="card-header">Al Muntasir Abir</h2>
                 <h3 class="card-header-secondary">
@@ -98,7 +98,7 @@
 
         <!-- My projects section -->
         <div class="clearfix my-projects-section">
-            <h1 class="section-header">My Projects</h1>
+            <h1 id="projects" class="section-header">My Projects</h1>
             <div class="project-gallery">
                 <!-- image and onHover there will be text onclik the text would open a big image  -->
                 <div class="project-gallery-card">
@@ -223,17 +223,17 @@
         
                 <div class="footer-center">
         
-                    <div>
+                    <div class="footer-center-element">
                         <i class="fa fa-map-marker"></i>
                         <p>Dhaka, Bangladesh</p>
                     </div>
             
-                    <div>
+                    <div class="footer-center-element">
                         <i class="fa fa-phone"></i>
                         <p>+880 1837362265</p>
                     </div>
             
-                    <div>
+                    <div class="footer-center-element">
                         <i class="fa fa-envelope"></i>
                         <p>abir4u2011@gmail.com</p>
                     </div>
@@ -255,7 +255,7 @@
         
                 </div>
     
-                <p class="footer-company-name">Al Muntasir Abir &copy; 2020</p>
+                <p class="copyright">Al Muntasir Abir &copy; 2020</p>
         
             </footer>
         </div>
