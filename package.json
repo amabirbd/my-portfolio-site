@@ -1,0 +1,11 @@
+{
+  "name": "al-muntasir-abir-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build-site.mjs",
+    "lint": "node --check index.js && node --check portfolio-data.js && node --check project.js && node --check build-site.mjs",
+    "test": "node --test tests/site.test.mjs"
+  }
+}

@@ -1,284 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muntasir Abir</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080b0d" />
+    <meta name="color-scheme" content="dark" />
+    <title>Al Muntasir Abir — Backend Software Engineer</title>
+    <meta name="description" content="Backend Software Engineer building reliable applications with Node.js, TypeScript, PostgreSQL, and event-driven architecture." />
+    <link rel="canonical" href="{{ORIGIN}}/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Al Muntasir Abir — Backend Software Engineer" />
+    <meta property="og:description" content="Backend systems, event-driven architecture, APIs, databases, and production engineering." />
+    <meta property="og:url" content="{{ORIGIN}}/" />
+    <meta property="og:image" content="{{ORIGIN}}/assets/portfolio-social-card-v2.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Al Muntasir Abir — Backend Software Engineer" />
+    <meta name="twitter:description" content="Backend systems, event-driven architecture, APIs, databases, and production engineering." />
+    <meta name="twitter:image" content="{{ORIGIN}}/assets/portfolio-social-card-v2.png" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23080b0d'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial' font-size='22' font-weight='700' fill='%2357e3ad'%3EAM%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Al Muntasir Abir","jobTitle":"Backend Software Engineer","url":"https://github.com/amabirbd","sameAs":["https://github.com/amabirbd","https://www.linkedin.com/in/almuntasir-abir-178889135/"]}</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Al Muntasir Abir, home"><span class="brand-mark">AM</span><span class="brand-name">Al Muntasir Abir</span></a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span class="sr-only">Open navigation</span></button>
+        <div class="nav-menu" id="nav-menu">
+          <div class="nav-links"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Capabilities</a><a href="#about">About</a></div>
+          <a class="resume-link" href="assets/al-muntasir-abir-resume.pdf" target="_blank">Resume <span aria-hidden="true">↗</span></a>
+          <a class="button button-small" href="mailto:abir4u2011@gmail.com">Contact</a>
+        </div>
+      </nav>
+    </header>
 
-    <div class="main-container">
-        
-        <!-- Hero and nav section -->
-        <div class="clearfix image-container">
-                <!-- <img src="assets/code2.jpg" alt="main-hero-image" class="main-hero-image"> -->
-                <div class="navigation">
-                    <ul class="nav">
-                        <li class="nav-list-item">Blog</li>
-                        <a href="#projects" style="text-decoration: none;"><li class="nav-list-item">Projects</li></a>
-                        <a href="#about-me" style="text-decoration: none;"><li class="nav-list-item">About Me</li></a>
-            
-                    </ul>
-                </div>
+    <main id="main">
+      <section class="hero shell" id="top">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="status-dot"></span> Backend systems · Dhaka, Bangladesh</div>
+          <h1>Backend Software Engineer<span class="accent">.</span></h1>
+          <p class="hero-lead">I build reliable services, APIs, and event-driven applications with TypeScript, Node.js, and PostgreSQL.</p>
+          <p class="hero-detail">I work on the problems that surface beyond a single process: concurrency, messaging, data consistency, failure recovery, and distributed workflows.</p>
+          <div class="hero-stack" aria-label="Primary technology stack"><span>NODE.JS</span><span>TYPESCRIPT</span><span>POSTGRESQL</span><span>RABBITMQ</span></div>
+          <div class="hero-actions"><a class="button" href="#work">Explore my work <span aria-hidden="true">→</span></a><a class="text-link" href="https://github.com/amabirbd" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a><a class="text-link subtle" href="assets/al-muntasir-abir-resume.pdf" target="_blank">Resume</a></div>
         </div>
 
-        <!-- main card section -->
-        <div class="card-container">
-            <div id="about-me" class="main-card">
-                <img src="assets/new3.jpg" alt="me" class="box-image">
-                <h2 class="card-header">Al Muntasir Abir</h2>
-                <h3 class="card-header-secondary">
-                    Fullstack Developer
-                </h3>
+        <div class="system-card reveal" role="img" aria-label="A request moves from a client through an API and message broker to inventory, payment, and notification services.">
+          <div class="system-topline"><span>DISTRIBUTED WORKFLOW</span><span class="live"><i></i> SYSTEM ONLINE</span></div>
+          <div class="diagram">
+            <div class="node"><small>EDGE</small><strong>Client</strong></div>
+            <div class="connector"><span>HTTPS</span></div>
+            <div class="node"><small>REST API</small><strong>API Service</strong></div>
+            <div class="connector event"><span>order.created</span></div>
+            <div class="node broker"><small>MESSAGE BROKER</small><strong>RabbitMQ</strong></div>
+            <div class="branches"><div class="branch"></div><div class="branch"></div><div class="branch"></div></div>
+            <div class="workers"><div class="node"><small>SERVICE</small><strong>Inventory</strong></div><div class="node"><small>SERVICE</small><strong>Payment</strong></div><div class="node"><small>WORKER</small><strong>Notify</strong></div></div>
+          </div>
+          <div class="system-foot"><span><b>AT-LEAST-ONCE</b> delivery</span><span><b>IDEMPOTENT</b> consumers</span></div>
+        </div>
+      </section>
 
-                <!-- pill shaped skills here -->
-                <div class="pill-skills">
-                    <ul class="pill-skills-list">
-                        <li class="pill">Python</li>
-                        <li class="pill">Javascript</li>
-                        <li class="pill">ReactJs</li>
-                        <li class="pill">Django</li>
-                        
-                        
-                    </ul>
-                </div>
+      <section class="credibility shell" aria-label="Engineering profile">
+        <div class="metric reveal"><span class="metric-value">4+</span><span>years building production software</span></div>
+        <div class="metric reveal"><span class="metric-value">5</span><span>substantial systems featured below</span></div>
+        <div class="focus-card reveal"><div><span class="technical-label">CURRENT FOCUS</span><h2>Reliability at system boundaries</h2></div><p>Messaging, distributed workflows, idempotency, consistency, and recovery when partial failure is normal.</p></div>
+      </section>
 
-                <!-- github, stackoverflow, linkedin font awesome icon goes here -->
-                
-                <div class="icons">
+      <section class="section shell" id="work">
+        <div class="section-heading reveal"><div><span class="section-index">01 / SELECTED WORK</span><h2>Systems, not just screens.</h2></div><p>Production platforms and focused engineering projects, explained through the problems they solve and the boundaries they manage.</p></div>
 
-                    <div class="icons-container">
-                        <span class="fa-icon">
-                            <a href="https://github.com/amabirbd" target="_blank"><i class="fab fa-github-square "></i></a>
-                        </span>
-                        <span class="fa-icon">
-                            <a href="https://www.linkedin.com/in/almuntasir-abir-178889135/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        </span>
-                        <span class="fa-icon">
-                            <a href="https://stackoverflow.com/users/6797330/almuntasir-abir" target="_blank"><i class="fab fa-stack-overflow"></i></a>
-                        </span>
-                    </div>
-                    
-                </div>
+        <article class="project project-featured reveal">
+          <a class="project-image" href="projects/wander-woman/" aria-label="Read the Wander Woman case study"><img src="assets/wander-woman.webp" width="1600" height="734" loading="lazy" alt="Wander Woman travel booking website home page" /></a>
+          <div class="project-content">
+            <div class="project-meta"><span>PRODUCTION PLATFORM</span><span class="status production">● PRODUCTION</span></div>
+            <h3>Wander Woman</h3>
+            <p class="project-summary">A large-scale travel platform unifying customer bookings, installment payments, trip operations, and internal CRM, CMS, and HRMS workflows.</p>
+            <div class="project-role"><span>ROLE</span><p>Sole backend developer — architecture, implementation, infrastructure, CI/CD, and selected Next.js modules.</p></div>
+            <ul class="challenge-list"><li>Booking and installment-payment workflows</li><li>Event-driven application architecture</li><li>1.5K–2K daily active traffic</li></ul>
+            <div class="tag-list"><span>TypeScript</span><span>Express.js</span><span>PostgreSQL</span><span>Next.js</span><span>AWS</span></div>
+            <a class="case-link" href="projects/wander-woman/">View engineering case study <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
 
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <a class="project-card-image" href="projects/sneaker-drop/"><img src="assets/sneaker-drop.webp" width="1600" height="784" loading="lazy" alt="Sneaker Drop limited-edition release interface" /></a>
+            <div class="project-card-body"><div class="project-meta"><span>CONCURRENCY SYSTEM</span><span class="status completed">● COMPLETED</span></div><h3>Sneaker Drop</h3><p>Limited-edition inventory with atomic reservations, real-time stock updates, and automatic stock recovery.</p><ul class="compact-challenges"><li>Atomic inventory holds</li><li>Cross-client synchronization</li><li>Reservation expiry</li></ul><div class="tag-list"><span>Express.js</span><span>React</span><span>Socket.io</span></div><a class="case-link" href="projects/sneaker-drop/">Examine the flow <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="project-card reveal">
+            <a class="project-card-image" href="projects/rag-saas/"><img src="assets/rag-saas.webp" width="1241" height="537" loading="lazy" alt="RAG SaaS AI assistant conversation interface" /></a>
+            <div class="project-card-body"><div class="project-meta"><span>MULTI-TENANT AI</span><span class="status completed">● MVP</span></div><h3>RAG SaaS</h3><p>Tenant-isolated knowledge management with document ingestion, vector search, and source-based AI answers.</p><ul class="compact-challenges"><li>Tenant data isolation</li><li>Retrieval pipelines</li><li>Usage and access control</li></ul><div class="tag-list"><span>FastAPI</span><span>PostgreSQL</span><span>LangChain</span><span>Chroma</span></div><a class="case-link" href="projects/rag-saas/">Explore the architecture <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="project-card reveal">
+            <a class="project-card-image" href="projects/iqbarter/"><img src="assets/iqbarter.webp" width="1366" height="634" loading="lazy" alt="IQBarter quiz and rewards website" /></a>
+            <div class="project-card-body"><div class="project-meta"><span>REAL-TIME BIDDING</span><span class="status completed">● COMPLETED</span></div><h3>IQBarter</h3><p>A quiz-and-rewards platform where points become bids in live prize auctions.</p><ul class="compact-challenges"><li>Real-time bid state</li><li>Concurrent participants</li><li>Winner resolution</li></ul><div class="tag-list"><span>Node.js</span><span>PostgreSQL</span><span>Sequelize</span><span>Socket.io</span></div><a class="case-link" href="projects/iqbarter/">Read the case study <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="project-card reveal">
+            <a class="project-card-image" href="projects/unishopr/"><img src="assets/unishopr.webp" width="1365" height="601" loading="lazy" alt="UniShopr cross-border shopping platform" /></a>
+            <div class="project-card-body"><div class="project-meta"><span>MARKETPLACE</span><span class="status completed">● PRODUCT WORK</span></div><h3>UniShopr</h3><p>A crowd-sourced cross-border marketplace matching shoppers with travelers who have unused luggage capacity.</p><ul class="compact-challenges"><li>Two-sided marketplace</li><li>Cross-border workflows</li><li>Shared application state</li></ul><div class="tag-list"><span>Node.js</span><span>React</span><span>Redux</span></div><a class="case-link" href="projects/unishopr/">View project details <span aria-hidden="true">→</span></a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section architecture-section">
+        <div class="shell">
+          <div class="section-heading reveal"><div><span class="section-index">02 / ARCHITECTURE</span><h2>Correctness across boundaries.</h2></div><p>The systems I’m drawn to have one common trait: the happy path is easy; the engineering starts when timing, concurrency, or partial failure changes the outcome.</p></div>
+          <div class="reliability-grid">
+            <div class="failure-flow reveal" role="img" aria-label="A message is received, database state is written, the consumer crashes before acknowledging, the message is redelivered, and an idempotency check avoids duplicate work.">
+              <div class="flow-header"><span>FAILURE SCENARIO 01</span><span>MESSAGE REDELIVERY</span></div>
+              <ol><li><i>01</i><div><strong>Consumer receives event</strong><span>delivery_tag: 8842</span></div></li><li><i>02</i><div><strong>Database state updated</strong><span>transaction committed</span></div></li><li class="failure"><i>!</i><div><strong>Process exits before ACK</strong><span>connection lost</span></div></li><li><i>03</i><div><strong>Broker redelivers event</strong><span>redelivered: true</span></div></li><li class="success"><i>✓</i><div><strong>Idempotency check succeeds</strong><span>duplicate write avoided</span></div></li></ol>
             </div>
-
+            <div class="decision-card reveal"><span class="technical-label">ENGINEERING PRINCIPLE</span><h3>Design the recovery path with the feature.</h3><p>Reliable systems make duplicates, timeouts, retries, and partial completion explicit. Those states belong in the design—not as cleanup after production incidents.</p><div class="decision-rows"><div><span>01</span><p><b>Own the source of truth.</b> Keep state changes inside clear transactional boundaries.</p></div><div><span>02</span><p><b>Assume messages repeat.</b> Make consumer operations safe to run more than once.</p></div><div><span>03</span><p><b>Make failure visible.</b> Preserve enough context to recover, inspect, and retry.</p></div></div></div>
+          </div>
         </div>
+      </section>
 
-        <!-- What I Do section -->
-        <!-- <div class=" whatido-section"> -->
-            <div class="clearfix whatido-section">
-            <h1 class="section-header">What I Do</h1>
-            <div class="service-cards">
-                <div class="service-card">
-                    
-                    <img src="assets/react3.jpg" alt="react logo" class="service-card-img">
-                    <h3 class="service-card-header">Frontend Development</h3>
-                    <p class="service-card-text">
-                        I am not a designer but i love design and pretty
-                        good ( i think ) with basic styling with <span class="html">Html</span> and <span class="css">CSS3</span>. And for complex project i love to work with <span style="color: #61DBFB;font-weight: bold;">ReactJs</span>
-                        
-                    </p>
-
-                </div>
-                <div class="service-card">
-                    <img src="assets/django-logo-negative.png" alt="django logo" class="service-card-img">
-                    <h3 class="service-card-header">Backend Development</h3>
-                    <p class="service-card-text">
-                        I love <span style="color: #4B8BBE; font-weight: bold;">Python</span> and i like to implement complex logic 
-                        on the backend using <span style="color: #00492c;font-weight: bold;">Django</span>.
-                    </p>
-                </div>
-                
-            </div>
+      <section class="section shell" id="skills">
+        <div class="section-heading reveal"><div><span class="section-index">03 / CAPABILITIES</span><h2>Engineering by domain.</h2></div><p>Tools are most useful when connected to the kind of problems they help solve.</p></div>
+        <div class="capability-grid">
+          <article class="capability reveal"><span>01</span><h3>Backend</h3><p>Service boundaries, REST APIs, business workflows, multitenant applications, and backend architecture.</p><div class="tag-list"><span>Node.js</span><span>TypeScript</span><span>Express.js</span><span>NestJS</span><span>FastAPI</span></div></article>
+          <article class="capability reveal"><span>02</span><h3>Data</h3><p>Relational modeling, transactional workflows, vector retrieval, and application data access.</p><div class="tag-list"><span>PostgreSQL</span><span>SQL</span><span>MongoDB</span><span>Redis</span><span>ChromaDB</span></div></article>
+          <article class="capability reveal"><span>03</span><h3>Messaging & systems</h3><p>Event-driven architecture, asynchronous workflows, consistency, and failure-aware design.</p><div class="tag-list"><span>RabbitMQ</span><span>Microservices</span><span>Socket.io</span><span>Docker</span></div></article>
+          <article class="capability reveal"><span>04</span><h3>Product & delivery</h3><p>Backend-heavy full-stack delivery, cloud infrastructure, automated deployments, and AI integrations.</p><div class="tag-list"><span>Next.js</span><span>React</span><span>AWS</span><span>CI/CD</span><span>LangChain</span></div></article>
         </div>
+      </section>
 
-        <!-- My projects section -->
-        <div class="clearfix my-projects-section">
-            <h1 id="projects" class="section-header">My Projects</h1>
-            <div class="project-gallery">
-                <!-- image and onHover there will be text onclik the text would open a big image  -->
-                <div class="project-gallery-card">
-                    <img src="assets/ghibli.PNG" alt="1">
-                    <a href="https://romantic-clarke-7a68e9.netlify.app/" target="_blank">
-                        <h3 class="project-gallery-card-text">
-                            A site for my friends shop "Yellow Club"
-                        </h3>
-                    </a>
-                </div>
-
-
-                <div class="project-gallery-card">
-                    
-                    <img src="assets/w1.PNG" alt="">
-                    <a href="https://admiring-borg-f779be.netlify.app/#action/3.2" target="_blank">
-                        <h3 class="project-gallery-card-text">
-                            Simple site built using React, React-bootstrap
-                        </h3>
-                    </a>
-                    
-                </div>
-
-                <div class="project-gallery-card">
-                    
-                    <img src="assets/carinooo.PNG" target="_blank" alt="carino">
-                    <a href="assets/carinooo.PNG">
-                        <h3 class="project-gallery-card-text">
-                            e-commerce site built withReact , Django, Django-rest-frameowork
-                        </h3>
-                    </a>
-                    
-                </div>
-
-                <div class="project-gallery-card">
-                    
-                    <img src="assets/mahbub.PNG" target="_blank" alt="carino">
-                    <a href="https://quirky-fermi-e5e7a7.netlify.app/" target="_blank">
-                        <h3 class="project-gallery-card-text">
-                            One of my clients portfolio site
-                        </h3>
-                    </a>
-                    
-                </div>
-
-
-
-            </div>
+      <section class="section experience-section" id="experience">
+        <div class="shell">
+          <div class="section-heading reveal"><div><span class="section-index">04 / EXPERIENCE</span><h2>Production responsibility.</h2></div><p>From multi-project product delivery to owning the backend foundation of a large travel platform.</p></div>
+          <div class="timeline">
+            <article class="timeline-item reveal"><div class="timeline-date"><span>JUL 2024 — PRESENT</span><i></i></div><div class="timeline-content"><div class="company-line"><div><h3>Software Engineer</h3><p>Wander Woman</p></div><span>Dhaka, Bangladesh</span></div><ul><li>Architected and implemented the backend system from scratch using TypeScript, Express.js, PostgreSQL, and event-driven architecture.</li><li>Built booking management, installment-payment workflows, and internal CRM, CMS, and HRMS capabilities.</li><li>Delivered Next.js modules for internal dashboards and the customer-facing application.</li><li>Integrated SSLCommerz and automated delivery through GitHub Actions, AWS, and other cloud services.</li><li>Optimized APIs and database behavior for approximately 1.5K–2K daily active traffic.</li></ul></div></article>
+            <article class="timeline-item reveal"><div class="timeline-date"><span>MAR 2022 — JUL 2024</span><i></i></div><div class="timeline-content"><div class="company-line"><div><h3>Software Developer</h3><p>Turtle Venture</p></div></div><ul><li>Developed and maintained business applications with React, Node.js, and PostgreSQL.</li><li>Designed backend APIs and internal workflows across multiple client projects.</li><li>Streamlined deployment workflows and integrated third-party service providers.</li></ul></div></article>
+          </div>
         </div>
+      </section>
 
-        <!-- How i Work -->
-        <div class="clearfix how-i-work">
-            <h1 class="section-header">How I Work</h1>
-            <div class="timeline">
-                <div class="container left">
-                  <div class="content">
-                    <h2>Design</h2>
-                    <p>Most of the times i design the website mockup with Figma or you can provide your own mockup.</p>
-                  </div>
-                </div>
-                <div class="container right">
-                  <div class="content">
-                    <h2>Architechture</h2>
-                    <p>If the project is complex and needs both frontend, backend and databases then i take the time to evalute the needs in order to provide you with best experience. </p>
-                  </div>
-                </div>
-                <div class="container left">
-                  <div class="content">
-                    <h2>Code</h2>
-                    <p>Then I code and debug and code and debug and code and debug...</p>
-                  </div>
-                </div>
-                <div class="container right">
-                  <div class="content">
-                    <h2>Deploy</h2>
-                    <p>I make sure that your website runs smoothely on the server and you don't break anything accidently.</p>
-                  </div>
-                </div>
-                
-        </div>
+      <section class="section shell about-section" id="about">
+        <div class="about-photo reveal"><img src="assets/al-muntasir-abir.webp" width="600" height="637" loading="lazy" alt="Al Muntasir Abir" /><span>AL MUNTASIR ABIR / 2026</span></div>
+        <div class="about-copy reveal"><span class="section-index">05 / ABOUT</span><h2>I like backend problems where correctness matters.</h2><p>I’m a software engineer with 4+ years of experience building SaaS platforms, AI-powered applications, and backend-heavy products. My strongest work sits at the intersection of product requirements and system behavior: turning bookings, payments, permissions, messages, and data into services that remain understandable as they grow.</p><p>I’m currently deepening my work in distributed systems—especially asynchronous processing, consistency, idempotency, and failure recovery. I learn architecture best by building systems that expose those trade-offs directly.</p><div class="about-links"><a href="assets/al-muntasir-abir-resume.pdf" target="_blank">Download resume <span aria-hidden="true">↓</span></a><a href="https://github.com/amabirbd" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/almuntasir-abir-178889135/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div></div>
+      </section>
 
+      <section class="contact-section" id="contact">
+        <div class="shell contact-inner reveal"><span class="technical-label">AVAILABLE FOR BACKEND & BACKEND-HEAVY ROLES</span><h2>Have an interesting engineering problem?</h2><p>I’m interested in backend, distributed-systems, and backend-heavy full-stack opportunities.</p><div class="contact-actions"><a class="button" href="mailto:abir4u2011@gmail.com">Email me <span aria-hidden="true">↗</span></a><a class="text-link" href="https://www.linkedin.com/in/almuntasir-abir-178889135/" target="_blank" rel="noreferrer">Connect on LinkedIn</a></div></div>
+      </section>
+    </main>
 
-        <!-- contact me -->
-        <div class="clearfix contact-me">
-            <h1 class="section-header">Contact Me</h1>
-
-            <p class="contact-small">If you have any query, please contact me</p>
-            <div class="contact-form">
-
-                <p>Message:</p>
-                <textarea id="contact" name="contact me" >
-                    
-                </textarea>
-
-
-                <p>Your email:</p>
-                <input type="email" id="email" class="email">
-            
-            </div>
-            <button class="contact-button">Send</button>
-        </div>
-
-
-        <!-- Footer -->
-        <!-- <div class="clearfix footer">
-            <ul class="footer-left-column">
-                <li>email:  abir4u2011@gmail.com </li>
-                <li>phone: +8801837362265</li>
-                <li></li>
-            </ul>
-        </div> -->
-
-		<div>
-            <footer class="footer-distributed">
- 
-                <div class="footer-left">
-        
-                    
-                    <p class="footer-links">
-                    <a href="#">Home</a>
-    
-                    <a href="#">Blog</a>
-    
-                    <a href="#">Pricing</a>
-    
-                    <a href="#">About</a>
-    
-                    <a href="#">Contact</a>
-                    </p>
-            
-                   
-                </div>
-        
-                <div class="footer-center">
-        
-                    <div class="footer-center-element">
-                        <i class="fa fa-map-marker"></i>
-                        <p>Dhaka, Bangladesh</p>
-                    </div>
-            
-                    <div class="footer-center-element">
-                        <i class="fa fa-phone"></i>
-                        <p>+880 1837362265</p>
-                    </div>
-            
-                    <div class="footer-center-element">
-                        <i class="fa fa-envelope"></i>
-                        <p>abir4u2011@gmail.com</p>
-                    </div>
-        
-                </div>
-        
-                <div class="footer-right">
-        
-                    
-            
-                    <div class="footer-icons">
-            
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-            
-                    </div>
-        
-                </div>
-    
-                <p class="copyright">Al Muntasir Abir &copy; 2020</p>
-        
-            </footer>
-        </div>
- 
-
-
-
-    </div>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-    <script src="index.js"></script>
-    
-</body>
+    <footer class="footer shell"><div><a class="brand" href="#top"><span class="brand-mark">AM</span><span class="brand-name">Al Muntasir Abir</span></a><p>Backend systems · Distributed workflows · Product engineering</p></div><div class="footer-links"><a href="mailto:abir4u2011@gmail.com">Email</a><a href="https://github.com/amabirbd" target="_blank" rel="noreferrer">GitHub</a><a href="assets/al-muntasir-abir-resume.pdf" target="_blank">Resume</a></div><p>© <span id="year">2026</span> Al Muntasir Abir</p></footer>
+  </body>
 </html>
