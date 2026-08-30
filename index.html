@@ -106,21 +106,8 @@
         </div>
       </section>
 
-      <section class="section architecture-section">
-        <div class="shell">
-          <div class="section-heading reveal"><div><span class="section-index">02 / ARCHITECTURE</span><h2>Correctness across boundaries.</h2></div><p>The systems I’m drawn to have one common trait: the happy path is easy; the engineering starts when timing, concurrency, or partial failure changes the outcome.</p></div>
-          <div class="reliability-grid">
-            <div class="failure-flow reveal" role="img" aria-label="A message is received, database state is written, the consumer crashes before acknowledging, the message is redelivered, and an idempotency check avoids duplicate work.">
-              <div class="flow-header"><span>FAILURE SCENARIO 01</span><span>MESSAGE REDELIVERY</span></div>
-              <ol><li><i>01</i><div><strong>Consumer receives event</strong><span>delivery_tag: 8842</span></div></li><li><i>02</i><div><strong>Database state updated</strong><span>transaction committed</span></div></li><li class="failure"><i>!</i><div><strong>Process exits before ACK</strong><span>connection lost</span></div></li><li><i>03</i><div><strong>Broker redelivers event</strong><span>redelivered: true</span></div></li><li class="success"><i>✓</i><div><strong>Idempotency check succeeds</strong><span>duplicate write avoided</span></div></li></ol>
-            </div>
-            <div class="decision-card reveal"><span class="technical-label">ENGINEERING PRINCIPLE</span><h3>Design the recovery path with the feature.</h3><p>Reliable systems make duplicates, timeouts, retries, and partial completion explicit. Those states belong in the design—not as cleanup after production incidents.</p><div class="decision-rows"><div><span>01</span><p><b>Own the source of truth.</b> Keep state changes inside clear transactional boundaries.</p></div><div><span>02</span><p><b>Assume messages repeat.</b> Make consumer operations safe to run more than once.</p></div><div><span>03</span><p><b>Make failure visible.</b> Preserve enough context to recover, inspect, and retry.</p></div></div></div>
-          </div>
-        </div>
-      </section>
-
       <section class="section shell" id="skills">
-        <div class="section-heading reveal"><div><span class="section-index">03 / CAPABILITIES</span><h2>Engineering by domain.</h2></div><p>Tools are most useful when connected to the kind of problems they help solve.</p></div>
+        <div class="section-heading reveal"><div><span class="section-index">02 / CAPABILITIES</span><h2>Engineering by domain.</h2></div><p>Tools are most useful when connected to the kind of problems they help solve.</p></div>
         <div class="capability-grid">
           <article class="capability reveal"><span>01</span><h3>Backend</h3><p>Service boundaries, REST APIs, business workflows, multitenant applications, and backend architecture.</p><div class="tag-list"><span>Node.js</span><span>TypeScript</span><span>Express.js</span><span>NestJS</span><span>FastAPI</span></div></article>
           <article class="capability reveal"><span>02</span><h3>Data</h3><p>Relational modeling, transactional workflows, vector retrieval, and application data access.</p><div class="tag-list"><span>PostgreSQL</span><span>SQL</span><span>MongoDB</span><span>Redis</span><span>ChromaDB</span></div></article>
@@ -131,7 +118,7 @@
 
       <section class="section experience-section" id="experience">
         <div class="shell">
-          <div class="section-heading reveal"><div><span class="section-index">04 / EXPERIENCE</span><h2>Production responsibility.</h2></div><p>From multi-project product delivery to owning the backend foundation of a large travel platform.</p></div>
+          <div class="section-heading reveal"><div><span class="section-index">03 / EXPERIENCE</span><h2>Production responsibility.</h2></div><p>From multi-project product delivery to owning the backend foundation of a large travel platform.</p></div>
           <div class="timeline">
             <article class="timeline-item reveal"><div class="timeline-date"><span>JUL 2024 — PRESENT</span><i></i></div><div class="timeline-content"><div class="company-line"><div><h3>Software Engineer</h3><p>Wander Woman</p></div><span>Dhaka, Bangladesh</span></div><ul><li>Architected and implemented the backend system from scratch using TypeScript, Express.js, PostgreSQL, and event-driven architecture.</li><li>Built booking management, installment-payment workflows, and internal CRM, CMS, and HRMS capabilities.</li><li>Delivered Next.js modules for internal dashboards and the customer-facing application.</li><li>Integrated SSLCommerz and automated delivery through GitHub Actions, AWS, and other cloud services.</li><li>Optimized APIs and database behavior for approximately 1.5K–2K daily active traffic.</li></ul></div></article>
             <article class="timeline-item reveal"><div class="timeline-date"><span>MAR 2022 — JUL 2024</span><i></i></div><div class="timeline-content"><div class="company-line"><div><h3>Software Developer</h3><p>Turtle Venture</p></div></div><ul><li>Developed and maintained business applications with React, Node.js, and PostgreSQL.</li><li>Designed backend APIs and internal workflows across multiple client projects.</li><li>Streamlined deployment workflows and integrated third-party service providers.</li></ul></div></article>
@@ -141,7 +128,7 @@
 
       <section class="section shell about-section" id="about">
         <div class="about-photo reveal"><img src="assets/al-muntasir-abir.webp" width="600" height="637" loading="lazy" alt="Al Muntasir Abir" /><span>AL MUNTASIR ABIR / 2026</span></div>
-        <div class="about-copy reveal"><span class="section-index">05 / ABOUT</span><h2>I like backend problems where correctness matters.</h2><p>I’m a software engineer with 4+ years of experience building SaaS platforms, AI-powered applications, and backend-heavy products. My strongest work sits at the intersection of product requirements and system behavior: turning bookings, payments, permissions, messages, and data into services that remain understandable as they grow.</p><p>I’m currently deepening my work in distributed systems—especially asynchronous processing, consistency, idempotency, and failure recovery. I learn architecture best by building systems that expose those trade-offs directly.</p><div class="about-links"><a href="assets/al-muntasir-abir-resume.pdf" target="_blank">Download resume <span aria-hidden="true">↓</span></a><a href="https://github.com/amabirbd" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/almuntasir-abir-178889135/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div></div>
+        <div class="about-copy reveal"><span class="section-index">04 / ABOUT</span><h2>I like backend problems where correctness matters.</h2><p>I’m a software engineer with 4+ years of experience building SaaS platforms, AI-powered applications, and backend-heavy products. My strongest work sits at the intersection of product requirements and system behavior: turning bookings, payments, permissions, messages, and data into services that remain understandable as they grow.</p><p>I’m currently deepening my work in distributed systems—especially asynchronous processing, consistency, idempotency, and failure recovery. I learn architecture best by building systems that expose those trade-offs directly.</p><div class="about-links"><a href="assets/al-muntasir-abir-resume.pdf" target="_blank">Download resume <span aria-hidden="true">↓</span></a><a href="https://github.com/amabirbd" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/almuntasir-abir-178889135/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div></div>
       </section>
 
       <section class="contact-section" id="contact">
