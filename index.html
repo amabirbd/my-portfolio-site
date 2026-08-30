@@ -49,18 +49,18 @@
           <div class="hero-actions"><a class="button" href="#work">Explore my work <span aria-hidden="true">→</span></a><a class="text-link" href="https://github.com/amabirbd" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a><a class="text-link subtle" href="assets/al-muntasir-abir-resume.pdf" target="_blank">Resume</a></div>
         </div>
 
-        <div class="system-card reveal" role="img" aria-label="A request moves from a client through an API into a BullMQ job queue, then workers process inventory, payment, and notification jobs. Redis stores queue state and Docker runs the workers.">
+        <div class="system-card reveal" role="img" aria-label="A request moves from a client through an API into a BullMQ job queue backed by Redis, then workers process inventory, payment, and notification jobs.">
           <div class="system-topline"><span>ASYNCHRONOUS WORKFLOW</span><span class="live"><i></i> SYSTEM ONLINE</span></div>
           <div class="diagram">
             <div class="node"><small>EDGE</small><strong>Client</strong></div>
             <div class="connector"><span>HTTPS</span></div>
             <div class="node"><small>REST API</small><strong>API Service</strong></div>
             <div class="connector event"><span>job queued</span></div>
-            <div class="node broker"><small>JOB QUEUE</small><strong>BullMQ</strong></div>
+            <div class="node broker queue-node"><div><small>ORCHESTRATION</small><strong>BullMQ</strong></div><div><small>QUEUE STATE</small><strong>Redis</strong></div></div>
             <div class="branches"><div class="branch"></div><div class="branch"></div><div class="branch"></div></div>
             <div class="workers"><div class="node"><small>WORKER</small><strong>Inventory</strong></div><div class="node"><small>WORKER</small><strong>Payment</strong></div><div class="node"><small>WORKER</small><strong>Notify</strong></div></div>
           </div>
-          <div class="system-foot"><span><b>REDIS</b> queue state</span><span><b>DOCKER</b> worker runtime</span></div>
+          <div class="system-foot"><span><b>RETRY + BACKOFF</b> policies</span><span><b>IDEMPOTENT</b> jobs</span></div>
         </div>
       </section>
 

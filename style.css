@@ -75,10 +75,15 @@ h1 { max-width: 760px; margin-bottom: 0; font-size: clamp(52px,6.2vw,88px); line
 .node small { display: block; color: #76837e; font: 650 10px var(--mono); letter-spacing: .08em; }
 .node strong { font-size: 13px; }
 .node.broker { border-color: #477f6e; background: #10221c; }
+.node.queue-node { display: grid; grid-template-columns: repeat(2,1fr); width: min(240px,80%); padding: 0; overflow: hidden; }
+.queue-node > div { min-width: 0; padding: 12px 14px; }
+.queue-node > div + div { border-left: 1px solid #315347; }
+.queue-node strong { display: block; margin-top: 2px; }
 .connector { position: relative; width: 1px; height: 31px; margin: auto; background: #34413f; }
 .connector span { position: absolute; left: 11px; top: 7px; white-space: nowrap; color: #71807a; font: 650 10px var(--mono); }
 .connector.event::after { content: ""; position: absolute; left: -2px; top: 0; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 9px var(--accent); animation: pulse 2.5s ease-in-out infinite; }
-.branches { display: grid; grid-template-columns: repeat(3,1fr); width: 75%; height: 34px; margin: auto; }
+.branches { position: relative; display: grid; grid-template-columns: repeat(3,1fr); width: 75%; height: 34px; margin: 18px auto 0; }
+.branches::before { content: ""; position: absolute; left: 50%; top: -18px; height: 18px; border-left: 1px solid #34413f; }
 .branch { position: relative; border-top: 1px solid #34413f; }
 .branch::after { content: ""; position: absolute; left: 50%; height: 34px; border-left: 1px solid #34413f; }
 .workers { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; }
