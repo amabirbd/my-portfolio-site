@@ -11,7 +11,7 @@ const sourceFiles = [
   'projects/wander-woman/index.html', 'projects/sneaker-drop/index.html',
   'projects/rag-saas/index.html', 'projects/iqbarter/index.html', 'projects/unishopr/index.html',
   'assets/wander-woman.webp', 'assets/sneaker-drop.webp', 'assets/rag-saas.webp',
-  'assets/iqbarter.webp', 'assets/unishopr.webp', 'assets/al-muntasir-abir.webp',
+  'assets/iqbarter.webp', 'assets/unishopr.webp', 'assets/profile-pic.jpg',
   'assets/portfolio-social-card-v2.png', 'assets/al-muntasir-abir-resume.pdf'
 ];
 
